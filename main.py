@@ -1,5 +1,4 @@
 import bs4
-import urlparse
 import pprint
 import nltk
 import math
