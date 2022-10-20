@@ -2,13 +2,12 @@ import nltk
 import math
 import re
 import typing as T
+from nltk.corpus import stopwords
 
-STOPWORDS = ['ll', 's', 'd', 't', '!', "'ll", "'m", "'s", "n't", "'re", '%', '-', '"', '/', "don'", '',
-    'a', 'the', 'of', 'and', 'but', 'or', 'for', 'to', 'are', 'be', 'can', 'do', 'get', 'have', 'i', "i'm",
-    'in', 'is', 'it', 'me', 'my', 'on', 'that', 'you', 'your']
 # punctuation = [l.strip() for l in open('data/punctuation.txt').readlines()]
 FILE1 = "data/hhguide.txt"
 FILE2 = "data/beowulf.txt"
+STOPWORDS = stopwords.words('english')
 
 # Add in punctuation, if desired
 #stopwords += punctuation
