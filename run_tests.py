@@ -91,7 +91,7 @@ def main():
                         compare_i = compare
                     doc1 = open("data/exp/" + train_path, 'r').read()
                     doc2 = open("data/exp/" + test_path, 'r').read()
-                    print(f"{lang}-   train-{train_set:15}-   test-{compare_i:7}: {js(doc1, doc2)}")
+                    print(f"{lang}-   train-{train_set:15}-   test-{compare_i:7}: {js(doc1, doc2, stopwords = True)}")
                     # print(f"{lang}-   train-{train_set:15}-   test-{compare_i:5}: {(train_path, test_path)}")
 
 
